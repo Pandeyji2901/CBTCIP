@@ -112,3 +112,79 @@ generate_receipt_pdf(receipt_data, file_path)
 ## License
 
 This project is not licensed.
+
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+
+# Rock-Paper-Scissors Game
+
+Welcome to the Rock-Paper-Scissors game! This simple Python script allows you to play the classic game of Rock-Paper-Scissors against the computer.
+
+### Features
+
+- **Interactive Gameplay**: The game prompts the user to enter their choice (rock, paper, or scissors).
+- **Computer Opponent**: The computer randomly selects its choice each round.
+- **Result Determination**: The game determines and displays the winner of each round based on the choices made.
+
+### How to Play
+
+1. **Run the Script**: Execute the script in a Python environment.
+2. **Enter Your Choice**: When prompted, enter your choice of rock, paper, or scissors.
+3. **View Results**: The script will display both your choice and the computer's choice, then announce the result of the game (win, lose, or tie).
+
+### Code Overview
+
+- `get_user_choice()`: Prompts the user to enter a valid choice (rock, paper, or scissors).
+- `get_computer_choice()`: Randomly selects a choice for the computer.
+- `determine_winner(user_choice, computer_choice)`: Determines the winner based on the rules of Rock-Paper-Scissors.
+- `play_game()`: Main function to play the game, combining user input, computer choice, and result determination.
+
+### Example Usage
+
+```python
+import random
+
+def get_user_choice():
+    choices = ['rock', 'paper', 'scissors']
+    user_choice = ''
+    while user_choice not in choices:
+        user_choice = input("Enter your choice (rock, paper, or scissors): ").lower()
+        if user_choice not in choices:
+            print("Invalid choice. Please choose rock, paper, or scissors.")
+    return user_choice
+
+def get_computer_choice():
+    choices = ['rock', 'paper', 'scissors']
+    return random.choice(choices)
+
+def determine_winner(user_choice, computer_choice):
+    if user_choice == computer_choice:
+        return "It's a tie!"
+    elif (user_choice == 'rock' and computer_choice == 'scissors') or \
+         (user_choice == 'paper' and computer_choice == 'rock') or \
+         (user_choice == 'scissors' and computer_choice == 'paper'):
+        return "You win!"
+    else:
+        return "You lose!"
+
+def play_game():
+    print("Welcome to Rock-Paper-Scissors!")
+    user_choice = get_user_choice()
+    computer_choice = get_computer_choice()
+    print(f"You chose: {user_choice}")
+    print(f"The computer chose: {computer_choice}")
+    result = determine_winner(user_choice, computer_choice)
+    print(result)
+
+if __name__ == "__main__":
+    play_game()
+```
+
+### Requirements
+
+- Python 3.x
+
+### License
+
+This project is not licensed.
