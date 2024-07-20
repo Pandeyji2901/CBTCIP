@@ -1,16 +1,19 @@
 
 # Sample receipt data
 receipt_data = {
-    "store_name": "Sample Store",
-    "address": "123 Sample Street, Sample City, SC 12345",
-    "phone": "(123) 456-7890",
+    "store_name": "Pandeyji General Store",
+    "address": "Dapodi, Pune City, 411012",
+    "phone": "(91) 8456-7890",
     "receipt_number": "001",
     "date": "2023-07-10",
     "items": [
-        {"description": "Item 1", "quantity": 2, "unit_price": 10.00},
-        {"description": "Item 2", "quantity": 1, "unit_price": 15.00}
+        {"description": "Milk", "quantity": 2, "unit_price": 10.00},
+        {"description": "Cigar", "quantity": 1, "unit_price": 45.00},
+        {"description": "Sanitary Pads", "quantity": 3, "unit_price": 60.00},
+        {"description": "Ruled Notebooks A4", "quantity": 7, "unit_price": 200.00}
+        {"description": "Reynolds R7", "quantity": 6, "unit_price": 70.00}
     ],
-    "subtotal": 35.00,
+    "subtotal": 2,450.00,
     "tax": 3.50,
     "total": 38.50
 }
