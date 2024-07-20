@@ -15,7 +15,7 @@ receipt_data = {
     "total": 38.50
 }
 
-pip install reportlab
+
 
 from reportlab.lib.pagesizes import letter
 from reportlab.pdfgen import canvas
