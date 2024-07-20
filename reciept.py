@@ -6,16 +6,16 @@ receipt_data = {
     "phone": "(91) 8456-7890",
     "receipt_number": "001",
     "date": "2023-07-10",
-    "items": [
+    "items":
+    [
         {"description": "Milk", "quantity": 2, "unit_price": 10.00},
         {"description": "Cigar", "quantity": 1, "unit_price": 45.00},
         {"description": "Sanitary Pads", "quantity": 3, "unit_price": 60.00},
-        {"description": "Ruled Notebooks A4", "quantity": 7, "unit_price": 200.00}
-        {"description": "Reynolds R7", "quantity": 6, "unit_price": 70.00}
+        
     ],
-    "subtotal": 2,450.00,
+    "subtotal": 245.00,
     "tax": 5.50,
-    "total": 2,455.50
+    "total": 250.50
 }
 
 
