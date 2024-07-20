@@ -70,5 +70,5 @@ def generate_receipt_pdf(receipt_data, file_path):
     c.save()
 
 # File path to save the PDF
-file_path = "/path/to/your/gallery/receipt.pdf"
+file_path = "D:\Code Practice\CBTCIP\receipt.pdf"
 generate_receipt_pdf(receipt_data, file_path)
