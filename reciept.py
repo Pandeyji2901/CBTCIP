@@ -14,8 +14,8 @@ receipt_data = {
         {"description": "Reynolds R7", "quantity": 6, "unit_price": 70.00}
     ],
     "subtotal": 2,450.00,
-    "tax": 3.50,
-    "total": 38.50
+    "tax": 5.50,
+    "total": 2,455.50
 }
 
 
